@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       URL: ${{vars.URL}}
-      USERNAME: ${{secrets.USERNAME}}
-      PASSWORD: ${{secrets.PASSWORD}}
+      USERNAME: ${{vars.USERNAME}}
+      PASSWORD: ${{vars.PASSWORD}}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
